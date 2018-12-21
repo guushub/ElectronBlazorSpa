@@ -26,5 +26,13 @@ namespace ElectronBlazorSpa.Server.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             });
         }
+
+        [HttpGet("[action]")]
+        public IEnumerable<UsbDeviceInfo> UsbDevices()
+        {
+            var devices = UsbLister.GetUSBDevices();
+            return devices;
+        }
     }
+    
 }

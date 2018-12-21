@@ -15,4 +15,10 @@
     <ProjectReference Include="..\ElectronBlazorSpa.Shared\ElectronBlazorSpa.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Pages\FetchData.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
 </Project>
