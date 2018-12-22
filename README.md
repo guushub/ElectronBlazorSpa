@@ -7,6 +7,7 @@
 ### Download dependencies
 * Download and install .Net Core 2.1+ sdk: https://dotnet.microsoft.com/download/dotnet-core/2.1
 * Download and install Blazor language services: https://marketplace.visualstudio.com/items?itemName=aspnet.blazor
+* Download and install Node.Js v8.6+: https://nodejs.org/en/
 
 ### Test solution in VS
 Open the solution in Visual Studio 2017 and test the application in a IIS express debug session with a browser
