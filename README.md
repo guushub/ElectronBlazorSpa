@@ -39,15 +39,15 @@ Compiling will produce the OS specific build of the application. The end result 
 ### Standard builds
 Open Powershell in the ElectronBlazorSpa.Server folder and run one of these commands:
 ```console
-    dotnet electronize build /target win
-    dotnet electronize build /target osx
-    dotnet electronize build /target linux
+    dotnet electronize build /target win /electron-params "--executable-name=ElectronBlazorSpa"
+    dotnet electronize build /target osx /electron-params "--executable-name=ElectronBlazorSpa"
+    dotnet electronize build /target linux /electron-params "--executable-name=ElectronBlazorSpa"
 ```
 
 ### Custom builds
 If you want to build for something like windows 7 x86, use:
 ```console
-    dotnet electronize build build /target custom win7-x86`;win32 /electron-arch ia32
+    dotnet electronize build build /target custom win7-x86`;win32 /electron-arch ia32 /electron-params "--executable-name=ElectronBlazorSpa"
 ```
 *(Note the escape character for the semicolon)*
 
